@@ -1,0 +1,29 @@
+.legal-container {
+  position: relative;
+
+}
+
+.legal-container::before {
+  display: block;
+  content: " ";
+  position: absolute;
+  bottom: 160px;
+  left: 0;
+  background: url('penguin.svg') no-repeat center center;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+}
+
+.legal-container p {
+  font-size: 8px;
+  color: #9c9c9C;
+}
+
+.legal-container a {
+  color: #5762D5;
+}
+
+@media screen and (max-width: 768px) {
+
+}

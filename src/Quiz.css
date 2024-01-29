@@ -1,0 +1,107 @@
+
+body {
+    background: linear-gradient(0deg, #32292F 0.03%, #5762D5);
+    color: #575366;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 32px;
+    height: 100vh;
+  }
+  
+  .quiz-container{
+    width: 500px;
+    background: #ffffff;
+    border-radius: 8px;
+    margin-top: 100px;
+    padding: 32px 64px;
+    box-sizing: border-box;
+  }
+  
+  .question-active-num{
+    font-size: 32px;
+    font-weight: 500;
+    color: #32292F;
+  }
+  .question-total-num{
+    font-size: 16px;
+    font-weight: 500;
+    color: #9c9c9C;
+  }
+  .question-title,
+  .result-title{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 16px 0;
+  }
+  
+  .question-choices{
+    margin-top: 24px;
+    margin-left: -40px;
+  }
+  .question-choices li{
+    text-decoration: none;
+    list-style: none;
+    color: #575366;
+    font-size: 16px;
+    font-weight: 500;
+    background: #ffffff;
+    border: 2px solid #9c9c9C;
+    border-radius: 8px;
+    padding: 16px;
+    cursor: pointer;
+  }
+  .question-choices li.selected-answer{
+    background: #32292F;
+    color: #ffffff;
+    border: 2px solid #32292F;
+  }
+  
+  .footer .button{
+    background: #5762D5;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 16px 42px;
+    margin-top: 16px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    width: 100%
+    
+  }
+  .footer .button.button-previous{
+    margin-right: 16px;
+    background: #9c9c9C;
+  }
+  .footer .button:disabled{
+    background: #9c9c9C;
+    cursor: not-allowed;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .quiz-container {
+      width: calc(100%);
+      max-width: 400px;
+      padding: 16px 24px;
+    }
+    .question-choices li{
+      margin-top: 8px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    
+    .question-choices {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+      grid-template-rows: repeat(2, 1fr); /* Two rows */
+      gap: 10px;
+    }
+  
+    .footer{
+      display: flex;
+      justify-content: center;
+    }
+  }
