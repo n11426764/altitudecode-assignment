@@ -10,3 +10,12 @@ Interactive Quiz Application
 1.	* [ ] Timer Functionality: Add a timer for each question or the entire quiz.
 2.	* [ ] Dynamic Question Loading: Use JavaScript to dynamically load questions from a JSON file or an external API.
 3.	* [ ] Feedback Mechanism: Provide immediate feedback for each answer or offer hints.
+### Note:
+#### Run quiz app via npm;
+npm install
+npm start
+#### Run quiz app via docker;
+Please rename package-locker-for-docker.json to package-lock.json
+docker compose build
+docker compose up
+Go to localhost. 
