@@ -7,8 +7,8 @@
   display: block;
   content: " ";
   position: absolute;
-  bottom: 160px;
-  left: 0;
+  bottom: 0;
+  left: -120px;
   background: url('penguin.svg') no-repeat center center;
   background-size: contain;
   width: 200px;
@@ -25,5 +25,9 @@
 }
 
 @media screen and (max-width: 768px) {
-
+  .legal-container::before {
+    width: 100px;
+    height: 100px;
+    left: -60px;
+  }
 }

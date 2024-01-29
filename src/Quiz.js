@@ -43,12 +43,14 @@ const Quiz = ({ questions }) => {
 
     return (
         <div className="quiz-container">
+            <h1>Penguin Quiz</h1>
             {!showResult ? (
                 <>
                 <div className="question">
-                    <span className="question-progress">Question {currentQuestion + 1} / {questions.length}</span>
+                    
+                    <div className="question-progress">Question {currentQuestion + 1} / {questions.length}</div>
                     <h2 className="question-title">{question}</h2>
-                    <hr />
+                    
                     <ul className="question-choices">
                         {choices.map((answer, index) => (
                             <li
