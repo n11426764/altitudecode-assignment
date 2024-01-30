@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f25537cb.css",
+    "main.js": "/static/js/main.b83f893b.js",
+    "static/media/penguin.svg": "/static/media/penguin.0f674814cfb9d42fe98c.svg",
+    "index.html": "/index.html",
+    "main.f25537cb.css.map": "/static/css/main.f25537cb.css.map",
+    "main.b83f893b.js.map": "/static/js/main.b83f893b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f25537cb.css",
+    "static/js/main.b83f893b.js"
+  ]
+}
