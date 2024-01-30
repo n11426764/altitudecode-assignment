@@ -17,8 +17,9 @@ body {
   box-sizing: border-box;
 }
 
-.question-progress{
-  text-align: right;
+.question-progress span{
+  font-weight: 500;
+  
 }
 
 .question-active-num {
@@ -79,7 +80,7 @@ body {
 
 .footer .button.button-previous {
   margin-right: 16px;
-  background: #9c9c9C;
+  background: #575366;
 }
 
 .footer .button:disabled {
@@ -87,11 +88,22 @@ body {
   cursor: not-allowed;
 }
 
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .quiz-container {
+    width: 420px;
+    padding: 16px 24px;
+  }
 
-@media screen and (max-width: 768px) {
+  .question-choices li {
+    margin-top: 8px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
   .quiz-container {
     width: calc(100%);
-    min-width: 350px;
+    max-width: 320px;
     padding: 16px 24px;
   }
 
