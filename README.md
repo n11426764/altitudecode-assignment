@@ -18,7 +18,7 @@ npm start
 ```
 Go to http://localhost:3000/
 #### Run quiz app via docker
-Please rename package-locker-for-docker.json to package-lock.json.\
+Please rename package-locker-for-docker.json to package-lock.json.
 ```
 docker compose build
 docker compose up
